@@ -55,17 +55,18 @@ ul {
 }
 
 section {
-    margin-top: 3rem;
+    margin-top: 1.7rem;
 }
 
 
 /* UTILITY CLASSES */
 
 .container {
-    max-width: 80%;
+    max-width: 1250px;
     margin-inline: auto;
     padding: var(--padding-inline-section);
     overflow: hidden;
+    /* border: 2px solid darkgoldenrod; */
 }
 
 .flex {
@@ -92,6 +93,11 @@ section {
 
 .nav-container {
     justify-content: space-between;
+    position: relative;
+}
+
+.logo{
+    cursor: pointer;
 }
 
 .logo img {
@@ -106,6 +112,10 @@ section {
 .top-nav-link {
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
+}
+
+.nav-toggle {
+    display: none;
 }
 
 /* ABOUT */
@@ -211,16 +221,16 @@ section {
     font-family: 'Mukta Vaani', sans-serif;
 }
 
-.contact-head {
+/* .contact-head {
     padding: 10px 0;
-}
+} */
 
 .map {
     padding: 10px 0;
 }
 
 .main-contact {
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
     flex-wrap: wrap;
@@ -237,19 +247,21 @@ h4 i {
 .address {
     flex-direction: column;
     margin: 10px 0;
-    /* max-width: 40%; */
+    padding: 10px 10px;
 }
 
 .call {
     flex-direction: column;
     /* border: 1px solid darkred; */
     margin: 10px 0;
+    padding: 10px 10px;
 }
 
 .mail {
     flex-direction: column;
     /* border: 1px solid darkred; */
     margin: 10px 0;
+    padding: 10px 10px;
 }
 
 

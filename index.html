@@ -7,19 +7,20 @@
 
     <!-- Our CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css">
   </head>
 
   <body>
     <!-- NavBar -->
-    <nav id="navbar">
+    <nav id="Navbar">
       <div class="container nav-container flex">
         <!-- logo -->
         <div class="logo">
-          <img src="img/logo.png" alt="" />
+          <img src="img/logo.png" alt="logo" />
         </div>
 
         <!-- links -->
-        <div class="nav-links">
+        <div class="nav-links" id="nav-links">
           <ul class="flex">
             <li><a href="#About" class="top-nav-link">About</a></li>
             <li><a href="#Skills" class="top-nav-link">Skills</a></li>
@@ -30,6 +31,11 @@
             </li>
           </ul>
         </div>
+
+        <!-- toggle bars -->
+        <a href="#" class="nav-toggle top-nav-link" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </a>
       </div>
     </nav>
 
@@ -338,14 +344,14 @@
               <i class="fa-brands fa-linkedin" style="color: #2c5caf"></i>
             </h1>
             <h4>
-              <a href="https://www.linkedin.com/in/sushil-soniwal-30/"
+              <a href="https://www.linkedin.com/in/sushil-soniwal-30/" target="_blank"
                 >Linkedin</a
               >
             </h4>
-            <p>
+            <!-- <p>
               Experienced coder and guide for new coding enthusiasts, with over
               1M content views and more than 3800 followers.
-            </p>
+            </p> -->
           </div>
 
           <div id="instagram" class="social">
@@ -353,25 +359,25 @@
               <i class="fa-brands fa-instagram" style="color: #a1368d"></i>
             </h1>
             <h4>
-              <a href="https://www.instagram.com/sushil30_soniwal/"
+              <a href="https://www.instagram.com/sushil30_soniwal/" target="_blank"
                 >Instagram</a
               >
             </h4>
-            <p>
+            <!-- <p>
               Emerging social media creator with more than 6k followers guiding
               them abouth the new technologies regularly.
-            </p>
+            </p> -->
           </div>
 
           <div id="twitter" class="social">
             <h1><i class="fa-brands fa-twitter" style="color: #686db4"></i></h1>
             <h4>
-              <a href="https://twitter.com/SKStwts">Twitter</a>
+              <a href="https://twitter.com/SKStwts" target="_blank">Twitter</a>
             </h4>
-            <p>
+            <!-- <p>
               Guiding young coding enthusiasts to develop their problem-solving
               capabilities and achieve their goals.
-            </p>
+            </p> -->
           </div>
 
           <div id="telegram" class="social">
@@ -381,35 +387,35 @@
                 style="color: RGB(0, 136, 204)"
               ></i>
             </h1>
-            <h4><a href="https://t.me/SushilSoniwal">Telegram</a></h4>
-            <p>
+            <h4><a href="https://t.me/SushilSoniwal" target="_blank">Telegram</a></h4>
+            <!-- <p>
               Creating a community of new programming enthusiasts to learn
               in-demand skills.
-            </p>
+            </p> -->
           </div>
 
           <div id="github" class="social">
             <h1><i class="fa-brands fa-github" style="color: #171515"></i></h1>
             <h4>
               <a
-                href="https://github.com/sushilsoniwal24"
+                href="https://github.com/sushilsoniwal24" target="_blank"
                 class="text-decoration-none"
                 >Github</a
               >
             </h4>
-            <p>
+            <!-- <p>
               Experienced developer with 405 contributions in DSA with Java and
               web development.
-            </p>
+            </p> -->
           </div>
 
           <div id="discord" class="social">
             <h1><i class="fa-brands fa-discord" style="color: #4682b4"></i></h1>
-            <h4><a href="#">Discord</a></h4>
-            <p>
+            <h4><a href="#" target="_blank">Discord</a></h4>
+            <!-- <p>
               Creating a community of new programming enthusiasts to learn
               in-demand skills.
-            </p>
+            </p> -->
           </div>
         </div>
       </div>
@@ -421,6 +427,16 @@
         <h4>This Site Is Created With ❤️ By Sushil Soniwal</h4>
       </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+      const toggleButton = document.getElementById("nav-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      toggleButton.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
 
     <!-- Fontawesome Kit -->
     <script

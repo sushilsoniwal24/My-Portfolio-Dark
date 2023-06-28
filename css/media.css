@@ -1,0 +1,105 @@
+/* Media Queries */
+
+@media screen and (max-width:991px){
+
+    /* Navbar */
+    .nav-container{
+        overflow: initial;
+    }
+
+    .logo{
+        margin-left: 3rem;
+    }
+
+    .nav-toggle{
+        margin-right: 3rem;
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background-color: #7272d1d9;
+        left: -100%;
+        top: 100%;
+        width: 100vw;
+        height: 100vh;
+        /* z-index: 9999; */
+        padding-block: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    /* About Me */
+    .about-me h1{
+        font-size: 3rem;
+    }
+
+    .about-me p{
+        font-size: 1.2rem;
+    }
+ 
+}
+
+@media screen and (max-width:767px) {
+    
+    /* About Me */
+    .about-container{
+        flex-direction: column-reverse;
+    }
+
+    .about-me{
+        max-width: 100vw;
+        text-align: center;
+    }
+
+    /* Services */
+    .service{
+        flex-direction: column;
+    }
+
+    .service-img{
+        max-width: 80%;
+    }
+
+    .service-info{
+        max-width: 75%;
+    }
+
+    .service-info h4{
+        font-size: 1.8rem;
+    }
+
+    .service-info p{
+        font-size: 1.15rem;
+    }
+
+    .read-btn{
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    /* Social Media */
+    .social{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:576px){
+
+    /* Contact */
+    .main-contact p {
+        font-size: 1.25rem;
+    }
+
+    /* Social Media */
+    .social{
+        width: 80%;
+    }
+}
